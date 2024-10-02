@@ -71,9 +71,9 @@ function TemplatePage({ params }: { params: templateSlugProps }) {
                   onSubmit(formData);
                 }}
               >
-                <div className="flex flex-col gap-4 p-5 mt-5  ">
+              <div className="flex flex-col gap-4 p-5 mt-5 overflow-y-auto max-h-[500px]">
                   {selectedTemplate?.form.map((form, idx) => (
-                    <div key={idx}>
+                    <div key={idx} className="max-h-[820px]">
                       <Label className="text-sm">{form?.label}</Label>
                       {form?.field === "input" ? (
                         <div className="mt-5 ">
