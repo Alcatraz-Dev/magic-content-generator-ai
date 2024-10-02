@@ -11,13 +11,7 @@ const nextConfig = {
       },
     ],
   },
-  reactStrictMode: true,
-  swcMinify: true,
-  output: 'standalone',
-  distDir: 'build',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+
   typescript: {
     ignoreBuildErrors: true,
   },
